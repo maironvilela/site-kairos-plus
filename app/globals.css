@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+@theme {
+  --font-sans: var(--font-poppins);
+  --font-cursive: var(--font-dancing-script);
+
+  /* Updated Palette based on Logo */
+  --color-kairos-wine: #4A1D46;
+  /* Deep Purple from Logo Text */
+  --color-kairos-yellow: #FFD700;
+  /* Yellow from Logo Splash */
+
+  --color-kairos-blue-start: #38bdf8;
+  /* sky-400 */
+  --color-kairos-blue-end: #22d3ee;
+  /* cyan-400 */
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-kairos-gradient {
+  background: linear-gradient(to right, var(--color-kairos-blue-start), var(--color-kairos-blue-end));
+}
+
+.text-kairos-gradient {
+  background: linear-gradient(to right, var(--color-kairos-blue-start), var(--color-kairos-blue-end));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}

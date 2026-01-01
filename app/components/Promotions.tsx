@@ -78,24 +78,36 @@ export default function Promotions() {
     return (
         <section id="promocoes" className="py-20 bg-kairos-sand-mix">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
+                    <motion.div
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-4xl font-bold mb-4 text-kairos-wine"
+                        className="lg:w-1/2 text-left"
                     >
-                        Promoções Exclusivas
-                    </motion.h2>
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-kairos-wine leading-tight">
+                            Transforme seu guarda-roupa com <span className="italic block mt-2 text-4xl md:text-6xl">Descontos Reais!</span>
+                        </h2>
+                        <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                            Aproveite nossos descontos especiais em peças selecionadas. Elegância e conforto com preços imperdíveis para você renovar seu estilo.
+                        </p>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-gray-600 max-w-2xl mx-auto"
+                        className="lg:w-1/2 relative h-[300px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
                     >
-                        Aproveite nossos descontos especiais em peças selecionadas. Elegância e conforto com preços imperdíveis.
-                    </motion.p>
+                        <Image
+                            src="/images/promotions-hero.png"
+                            alt="Descontos Reais em Moda Plus Size"
+                            fill
+                            className="object-cover hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-linear-to-t from-kairos-wine/20 to-transparent"></div>
+                    </motion.div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">

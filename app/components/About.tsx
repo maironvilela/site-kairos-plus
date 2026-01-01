@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <section id="about" className="py-24 bg-white relative overflow-hidden">
+        <section id="about" className="py-24 bg-kairos-sand-mix relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 

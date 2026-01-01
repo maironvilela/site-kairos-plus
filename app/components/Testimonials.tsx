@@ -128,7 +128,7 @@ export default function Testimonials() {
     ];
 
     return (
-        <section id="testimonials" className="py-24 bg-gray-50 relative overflow-hidden">
+        <section id="testimonials" className="py-24 bg-kairos-sand-mix relative overflow-hidden">
             <div className="container mx-auto px-6 text-center">
                 <FadeIn>
                     <div className="mb-16 space-y-4">

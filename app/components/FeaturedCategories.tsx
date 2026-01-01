@@ -31,7 +31,7 @@ import FadeIn from "./ui/FadeIn";
 
 export default function FeaturedCategories() {
     return (
-        <section id="categories" className="py-24 relative z-10">
+        <section id="categories" className="py-24 bg-kairos-sand-mix relative z-10">
             <div className="container mx-auto px-6">
                 <FadeIn>
                     <div className="text-center mb-16 space-y-4">

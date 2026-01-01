@@ -12,6 +12,7 @@ import FadeIn from "./components/ui/FadeIn";
 import BackToTop from "./components/BackToTop";
 import StoreLocation from "./components/StoreLocation";
 import WhatsAppCta from "./components/WhatsAppCta";
+import SectionSeparator from "./components/ui/SectionSeparator";
 
 export default function Home() {
   return (
@@ -45,22 +46,39 @@ export default function Home() {
           <FeaturedCategories />
         </FadeIn>
 
+        <div className="relative z-30">
+          <SectionSeparator variant="curve" fillColor="#fff8e7" />
+        </div>
+
         <About />
+
+        <div className="relative z-30 -mt-24">
+          <SectionSeparator variant="wave" fillColor="#fff8e7" flip />
+        </div>
 
         <FadeIn delay={0.6}>
           <Services />
         </FadeIn>
 
+        <div className="relative z-30">
+          <SectionSeparator variant="curve" fillColor="#fff8e7" />
+        </div>
+
         <FadeIn delay={0.7}>
           <Promotions />
         </FadeIn>
 
-
+        <div className="relative z-30">
+          <SectionSeparator variant="wave" fillColor="#fff8e7" />
+        </div>
 
         <FadeIn delay={0.8}>
           <Testimonials />
         </FadeIn>
 
+        <div className="relative z-30">
+          <SectionSeparator variant="curve" fillColor="#fff8e7" flip />
+        </div>
 
         <FadeIn delay={0.75}>
           <WhatsAppCta />

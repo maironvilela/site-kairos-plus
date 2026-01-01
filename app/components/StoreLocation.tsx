@@ -6,7 +6,7 @@ export default function StoreLocation() {
     const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
     return (
-        <section id="location" className="py-24 bg-gray-50">
+        <section id="location" className="py-24 bg-kairos-sand-mix">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Info Column */}

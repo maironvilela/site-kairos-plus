@@ -25,7 +25,7 @@ const differentials = [
 
 export default function Services() {
     return (
-        <section id="differentials" className="py-24 bg-white relative z-20">
+        <section id="differentials" className="py-24 bg-kairos-sand-mix relative z-20">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
 

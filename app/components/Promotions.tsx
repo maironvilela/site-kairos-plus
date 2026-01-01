@@ -76,7 +76,7 @@ export default function Promotions() {
     const [selectedItem, setSelectedItem] = useState<(typeof promotions)[0] | null>(null);
 
     return (
-        <section id="promocoes" className="py-20 bg-gray-50">
+        <section id="promocoes" className="py-20 bg-kairos-sand-mix">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <motion.h2

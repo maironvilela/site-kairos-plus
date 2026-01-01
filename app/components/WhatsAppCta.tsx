@@ -51,38 +51,31 @@ export default function WhatsAppCta() {
                         </Link>
                     </div>
 
-                    <div className="flex-1 relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer">
-                        <div className="absolute inset-0 z-10 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
-
-                        {/* Fake Play Button to Simulate Video */}
-                        <div className="absolute inset-0 z-20 flex items-center justify-center">
-                            <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center pl-2 shadow-lg backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
-                                <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z" />
-                                </svg>
+                    <div className="flex-1 relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500">
+                        {/* Using a placeholder or existing image appropriately Styled */}
+                        <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-10 flex flex-col justify-end p-8">
+                            <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20">
+                                <p className="text-white font-medium text-sm">Junte-se a +500 clientes felizes</p>
+                                <div className="flex items-center -space-x-2 mt-3">
+                                    {[1, 2, 3, 4].map(i => (
+                                        <div key={i} className={`w-8 h-8 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-500 overflow-hidden`}>
+                                            {/* Placeholder avatars if no users images */}
+                                            <span className="bg-indigo-100 w-full h-full flex items-center justify-center text-indigo-600">U{i}</span>
+                                        </div>
+                                    ))}
+                                    <div className="w-8 h-8 rounded-full border-2 border-white bg-green-500 flex items-center justify-center text-xs font-bold text-white">
+                                        +
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                         {/* Video Poster Image */}
                         <Image
-                            src="/images/whatsapp-group-video-poster.png"
-                            alt="Clientes felizes comprando pelo WhatsApp"
+                            src="/images/whatsapp-shopping-message.png"
+                            alt="Clientes felizes com alerta de promoção no WhatsApp"
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                         />
-
-                        {/* Floating Overlay Card */}
-                        <div className="absolute bottom-8 left-8 right-8 z-30">
-                            <div className="bg-white/95 backdrop-blur-md p-4 rounded-xl shadow-lg border border-green-100 flex items-center gap-4">
-                                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-gray-900 text-sm">Compre com facilidade</p>
-                                    <p className="text-xs text-gray-500">Veja como +500 clientes compram diariamente</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -54,12 +54,14 @@ export default function WhatsAppCta() {
                     <div className="flex-1 relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-all duration-500">
                         {/* Using a placeholder or existing image appropriately Styled */}
 
-                        {/* Video Poster Image */}
-                        <Image
-                            src="/images/whatsapp-shopping-message.png"
-                            alt="Clientes felizes com alerta de promoção no WhatsApp"
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        {/* WhatsApp Video */}
+                        <video
+                            src="/videos/promocoes.mp4"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
                         />
                     </div>
                 </div>

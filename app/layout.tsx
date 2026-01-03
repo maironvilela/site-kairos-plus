@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   }
 };
 
+import ClientLayout from "./components/ClientLayout";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,7 +33,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${dancingScript.variable} antialiased`}
       >
-        {children}
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );

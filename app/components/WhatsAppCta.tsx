@@ -41,7 +41,7 @@ export default function WhatsAppCta() {
                             ))}
                         </ul>
 
-                        <Link href="https://chat.whatsapp.com/IO4zKzWpk82Ky3g69iNUkN" target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
+                        <Link href="https://chat.whatsapp.com/L3awxOI2dEt6Z2ri8hlnSa" target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
                             <button className="px-8 py-4 bg-[#25D366] text-white text-lg font-bold rounded-full hover:bg-[#128C7E] transition-all duration-300 shadow-lg hover:shadow-green-500/30 flex items-center gap-3 transform hover:-translate-y-1">
                                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                                     <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.654-.698c1.09.597 2.007.95 2.806.95 3.181 0 5.767-2.586 5.767-5.766.001-3.182-2.585-5.767-5.767-5.767zm6.768 5.767c-.001 3.756-3.029 6.785-6.768 6.785-.894 0-1.996-.289-3.418-.949l-3.238.851.868-3.153c-.76-1.503-1.155-2.576-1.155-3.534.001-3.756 3.029-6.785 6.768-6.785 3.743.001 6.772 3.029 6.772 6.785h.171zm-9.153-1.897c-.126-.207-.466-.217-.678-.008-.669.66-1.077 1.487-1.077 1.838 0 .4.407 2.053 2.146 3.861 2.049 2.13 4.228 2.457 4.803 2.457.375 0 1.259-.517 1.428-1.033.17-.516.108-.94.02-1.085-.087-.145-.632-.387-.714-.428-.423-.211-2.193-1.026-2.315-1.033-.122-.007-.221.211-.476.516-.255.305-.441.228-.773.082-.333-.146-1.442-.647-2.433-1.509-.769-.669-1.057-1.166-1.258-1.527-.201-.362.247-.463.327-1.131z" />
